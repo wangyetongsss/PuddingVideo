@@ -15,6 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 
+import com.puddingvideoproject.Fragment.Fragment_classify;
 import com.puddingvideoproject.Fragment.Fragment_organize;
 import com.puddingvideoproject.R;
 
@@ -102,7 +103,13 @@ public class MainActivity extends FragmentActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return Fragment_organize.getFragment(position);
+            //判断当前滑动的position值为多少
+            if (position == 0) {
+                return Fragment_organize.getFragment(position);
+            } else if (position == 1) {
+                return Fragment_classify.getFragment(position);
+            }
+            return null;
         }
 
         @Override

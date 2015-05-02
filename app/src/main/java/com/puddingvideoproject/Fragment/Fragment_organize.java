@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.puddingvideoproject.R;
+
 
 /**
  * Created by lenovo on 2015/5/2.
@@ -26,10 +28,10 @@ public class Fragment_organize extends Fragment {
         return fragment_organize;
     }
 
+    //设置主页面的布局文件
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        TextView text_main = new TextView(getActivity());
-        text_main.setText(getArguments().getInt(KEY) + "页面");
-        return text_main;
+        View view = inflater.inflate(R.layout.fragment_organize, null);
+        return view;
     }
 }
