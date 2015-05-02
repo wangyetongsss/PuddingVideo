@@ -24,7 +24,7 @@ public class Fragment_classify extends Fragment {
     private GridAdapter gridadapter;
     private int num = 10;
 
-
+//
     public static Fragment_classify getFragment(int position) {
         Fragment_classify fragment_classify = new Fragment_classify();
 
